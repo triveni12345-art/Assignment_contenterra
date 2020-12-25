@@ -83,7 +83,6 @@ class RestaurantDetails extends Component {
              
 }
     componentDidMount() {
-        console.log('abc');
         Axios.get('http://localhost:1337/rest').then(res => {
             console.log(res.data);
             this.setState({ restdata: res.data })
